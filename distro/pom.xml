@@ -176,13 +176,19 @@ atlas.graph.storage.lock.expiry-time=500
 atlas.graph.storage.lock.wait-time=300
                 </graph.storage.properties>
                 <hbase.embedded>false</hbase.embedded>
+
+                <!--                <solr.dir>${project.build.directory}/solr</solr.dir>-->
+                <!--                <solr.embedded>true</solr.embedded>-->
+                <!--                <solr.folder>solr-${solr.version}</solr.folder>-->
+                <!--                <solr.tar>https://mirrors.tuna.tsinghua.edu.cn/apache/solr/solr/${solr.version}/solr-${solr.version}.tgz</solr.tar>-->
                 <solr.dir>${project.build.directory}/solr</solr.dir>
                 <solr.embedded>true</solr.embedded>
                 <solr.folder>solr-${solr.version}</solr.folder>
                 <solr.tar>https://archive.apache.org/dist/lucene/solr/${solr.version}/solr-${solr.version}.tgz</solr.tar>
                 <zk.dir>${project.build.directory}/zk</zk.dir>
                 <zk.folder>apache-zookeeper-${zookeeper.version}-bin</zk.folder>
-                <zk.tar>https://archive.apache.org/dist/zookeeper/zookeeper-${zookeeper.version}/apache-zookeeper-${zookeeper.version}-bin.tar.gz</zk.tar>
+                <zk.tar>https://mirrors.tuna.tsinghua.edu.cn/apache/zookeeper/zookeeper-3.5.10/apache-zookeeper-3.5.10-bin.tar.gz</zk.tar>
+<!--                <zk.tar>https://archive.apache.org/dist/zookeeper/zookeeper-${zookeeper.version}/apache-zookeeper-${zookeeper.version}-bin.tar.gz</zk.tar>-->
             </properties>
             <build>
                 <plugins>
@@ -394,7 +400,8 @@ atlas.graph.storage.hbase.regions-per-server=1
                 <hbase.dir>${project.build.directory}/hbase</hbase.dir>
                 <hbase.embedded>true</hbase.embedded>
                 <hbase.folder>hbase-${hbase.version}</hbase.folder>
-                <hbase.tar>https://archive.apache.org/dist/hbase/${hbase.version}/hbase-${hbase.version}-bin.tar.gz</hbase.tar>
+                <hbase.tar>https://mirrors.tuna.tsinghua.edu.cn/apache/hbase/${hbase.version}/hbase-${hbase.version}-bin.tar.gz</hbase.tar>
+<!--                <hbase.tar>https://archive.apache.org/dist/hbase/${hbase.version}/hbase-${hbase.version}-bin.tar.gz</hbase.tar>-->
                 <solr.dir>${project.build.directory}/solr</solr.dir>
                 <solr.embedded>true</solr.embedded>
                 <solr.folder>solr-${solr.version}</solr.folder>
@@ -486,7 +493,8 @@ atlas.graph.storage.conf-file=${sys:atlas.home}/conf/cassandra.yml
                 <solr.tar>https://archive.apache.org/dist/lucene/solr/${solr.version}/solr-${solr.version}.tgz</solr.tar>
                 <zk.dir>${project.build.directory}/zk</zk.dir>
                 <zk.folder>apache-zookeeper-${zookeeper.version}-bin</zk.folder>
-                <zk.tar>https://archive.apache.org/dist/zookeeper/zookeeper-${zookeeper.version}/apache-zookeeper-${zookeeper.version}-bin.tar.gz</zk.tar>
+<!--                <zk.tar>https://archive.apache.org/dist/zookeeper/zookeeper-${zookeeper.version}/apache-zookeeper-${zookeeper.version}-bin.tar.gz</zk.tar>-->
+                <zk.tar>https://mirrors.tuna.tsinghua.edu.cn/apache/zookeeper/zookeeper-${zookeeper.version}/apache-zookeeper-${zookeeper.version}-bin.tar.gz</zk.tar>
             </properties>
             <build>
                 <plugins>
